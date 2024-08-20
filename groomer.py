@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='This script generates transaction(
 'all those payments, along with those for any addresses which are all tiny payments, to a single txout.\n'
 'It must connect to ghostridercoin to inspect your wallet and to get fresh addresses to pay your coin to.')
 parser.add_argument('rpc_server', type=str, help='Wallet RPC server info. '
-                    'Example: http://user:password@127.0.0.1:9766')
+                    'Example: http://rpcuser:rpcpassword@127.0.0.1:15420')
 parser.add_argument('-i', '--max_amt_input', type=Decimal, default=Decimal('250'),
   help='The maximum input amount of a single transaction to consolidate (default: 25 GRR)')
 parser.add_argument('-n', '--max_num_tx', type=int, default=500,
